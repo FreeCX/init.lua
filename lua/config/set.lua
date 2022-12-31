@@ -4,34 +4,33 @@ vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 vim.opt.expandtab = true
 
--- 
+-- line number and column stuff
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.colorcolumn = "120"
 vim.opt.signcolumn = "yes"
 
--- 
+-- indent stuff
+vim.opt.autoindent = true
+vim.opt.breakindent = true
+vim.opt.copyindent = true
 vim.opt.smartindent = true
 
--- 
+-- case stuff
+vim.opt.smartcase = true
+vim.opt.ignorecase = true
+
+-- no need to wrap text
 vim.opt.wrap = false
 
--- 
+-- search stuff
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
--- 
-vim.opt.termguicolors = true
-
--- 
+-- highlight cursor line
 vim.opt.cursorline = true
 
---
-vim.opt.smartcase = true
-vim.opt.ignorecase = true
-vim.opt.autoindent = true
-
--- undotree
+-- undotree stuff
 vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
