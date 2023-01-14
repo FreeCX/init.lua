@@ -2,16 +2,21 @@ vim.cmd.packadd("packer.nvim")
 
 return require("packer").startup(function(use)
   -- Packer can manage itself
-  use "wbthomason/packer.nvim"
+  use { "wbthomason/packer.nvim" }
 
-  -- packages
+  -- telescope
   use { "nvim-telescope/telescope.nvim", tag = "0.1.x", requires = { { "nvim-lua/plenary.nvim" } } }
-  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make', cond = vim.fn.executable 'make' == 1 }
+  use { "nvim-telescope/telescope-fzf-native.nvim", run = "make", cond = vim.fn.executable "make" == 1 }
 
-  use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
-  use("lukas-reineke/indent-blankline.nvim")
-  use("mbbill/undotree")
-  use("preservim/nerdtree")
+  use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
+  use { "lukas-reineke/indent-blankline.nvim" }
+  use { "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" }
+
+  -- *tree
+  use { "mbbill/undotree" }
+  use { "preservim/nerdtree" }
+
+  -- LSP
   use {
     "VonHeikemen/lsp-zero.nvim",
     requires = {
@@ -35,6 +40,6 @@ return require("packer").startup(function(use)
   }
 
   -- theme
-  use "EdenEast/nightfox.nvim"
+  use { "EdenEast/nightfox.nvim" }
   -- find more at: https://vimcolorschemes.com/
 end)
