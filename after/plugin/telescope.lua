@@ -1,6 +1,8 @@
 local builtin = require("telescope.builtin")
 local themes = require("telescope.themes")
 
+require("telescope").load_extension("fzf")
+
 vim.keymap.set("n", "<leader><space>", builtin.buffers, { desc = "[ ] Find existing buffers" })
 vim.keymap.set("n", "<leader>/", function()
   builtin.current_buffer_fuzzy_find(themes.get_dropdown { winblend = 10, previewer = false })
