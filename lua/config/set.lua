@@ -1,3 +1,5 @@
+local helper = require("config.helper")
+
 -- configure tabs
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
@@ -33,7 +35,7 @@ vim.opt.cursorline = true
 -- undotree stuff
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undodir = helper.get_nvim_data() .. "undodir"
 vim.opt.undofile = true
 
 -- for bufferline
