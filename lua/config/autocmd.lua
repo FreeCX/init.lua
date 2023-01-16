@@ -1,4 +1,4 @@
--- trip trailing spaces on save
+-- strip trailing spaces on save
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
   -- use only this type of files
   pattern = {
@@ -13,5 +13,5 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
     -- Dockerfile, Makefile, Pipfile, meson
     "Dockerfile", "Makefile", "Pipfile", "*.build",
   },
-  command = [[%s/\s\+$//e]],
+  command = [[ %s/\s\+$//e ]],
 })
