@@ -14,7 +14,6 @@ return require("packer").startup(function(use)
 
   -- *tree
   use { "mbbill/undotree" }
-  use { "preservim/nerdtree" }
 
   -- LSP
   use {

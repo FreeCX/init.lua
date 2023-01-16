@@ -10,7 +10,6 @@ My neovim config
 - [indent-blankline.vim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
 - [undotree](https://github.com/mbbill/undotree)
-- [The NERDTree](https://github.com/preservim/nerdtree)
 - [LSP Zero](https://github.com/VonHeikemen/lsp-zero.nvim)
 
 ## Theme
