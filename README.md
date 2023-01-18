@@ -11,6 +11,8 @@ My neovim config
 - [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - [undotree](https://github.com/mbbill/undotree)
+- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- [Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [LSP Zero](https://github.com/VonHeikemen/lsp-zero.nvim)
 
 ## Theme

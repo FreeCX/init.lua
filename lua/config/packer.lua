@@ -13,6 +13,8 @@ return require("packer").startup(function(use)
   use { "lukas-reineke/indent-blankline.nvim" }
   use { "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" }
   use { "mbbill/undotree" }
+  use { "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons", opt = true } }
+  use { "numToStr/Comment.nvim" }
 
   -- git
   use { 'lewis6991/gitsigns.nvim' }
