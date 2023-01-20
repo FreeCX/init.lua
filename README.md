@@ -13,6 +13,7 @@ My neovim config
 - [undotree](https://github.com/mbbill/undotree)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - [Comment.nvim](https://github.com/numToStr/Comment.nvim)
+- [sleuth.vim](https://github.com/tpope/vim-sleuth)
 - [LSP Zero](https://github.com/VonHeikemen/lsp-zero.nvim)
 
 ## Theme

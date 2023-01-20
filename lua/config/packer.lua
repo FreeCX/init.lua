@@ -8,13 +8,22 @@ return require("packer").startup(function(use)
   use { "nvim-telescope/telescope.nvim", tag = "0.1.x", requires = { { "nvim-lua/plenary.nvim" } } }
   use { "nvim-telescope/telescope-fzf-native.nvim", run = "make", cond = vim.fn.executable "make" == 1 }
 
-  -- many others
+  -- treesitter plugin
   use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
-  use { "lukas-reineke/indent-blankline.nvim" }
-  use { "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" }
+
+  -- undo history
   use { "mbbill/undotree" }
-  use { "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons", opt = true } }
+
+  -- for comments
   use { "numToStr/Comment.nvim" }
+
+  -- autodetect tabstop and shiftwidth
+  use { "tpope/vim-sleuth" }
+
+  -- *line plugins
+  use { "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" }
+  use { "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons", opt = true } }
+  use { "lukas-reineke/indent-blankline.nvim" }
 
   -- git
   use { 'lewis6991/gitsigns.nvim' }
