@@ -10,6 +10,7 @@ My neovim config
 - [indent-blankline.vim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [vim-fugitive](https://github.com/tpope/vim-fugitive)
 - [undotree](https://github.com/mbbill/undotree)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - [Comment.nvim](https://github.com/numToStr/Comment.nvim)
