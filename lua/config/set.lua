@@ -22,8 +22,8 @@ vim.opt.smartindent = true
 vim.opt.smartcase = true
 vim.opt.ignorecase = true
 
--- no need to wrap text
-vim.opt.wrap = false
+-- enable text wrap
+vim.opt.wrap = true
 
 -- search stuff
 vim.opt.hlsearch = false
