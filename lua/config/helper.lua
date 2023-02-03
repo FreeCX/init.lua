@@ -6,7 +6,7 @@ function helper.get_nvim_data()
   if jit.os == "Windows" then
     path = vim.fn.stdpath("config") .. "-data/"
   else
-    path = os.getenv("HOME") .. "/.vim/"
+    path = os.getenv("HOME") .. "/.cache/nvim/"
   end
   return path
 end
