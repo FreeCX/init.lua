@@ -8,7 +8,8 @@ lsp.setup_nvim_cmp({
   },
 })
 lsp.ensure_installed({
-  "sumneko_lua",
+  "clangd",
+  "lua_ls",
   "rust_analyzer"
 })
 lsp.setup()

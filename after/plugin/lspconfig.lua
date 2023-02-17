@@ -3,8 +3,8 @@ capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
 local mason_lspconfig = require "mason-lspconfig"
 local servers = {
-  --    clangd = {},
-  --    rust_analyzer = {},
+  clangd = {},
+  rust_analyzer = {},
   sumneko_lua = {
     Lua = {
       workspace = { checkThirdParty = false },
