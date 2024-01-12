@@ -1,7 +1,6 @@
 -- configure theme
 require("nightfox").setup {
   options = {
-    transparent = true,
     styles = {
       -- now comment are bold
       comments = "bold",

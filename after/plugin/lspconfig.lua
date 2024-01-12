@@ -3,15 +3,15 @@ capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
 local mason_lspconfig = require "mason-lspconfig"
 local servers = {
-  clangd = {},
-  rust_analyzer = {},
+  -- use default for clangd and rust_analyzer
+  -- and custom for sumneko_lua
   sumneko_lua = {
     Lua = {
       workspace = { checkThirdParty = false },
       telemetry = { enable = false },
       format = { enable = true }
     }
-  }
+  },
 }
 
 local on_attach = function(_, bufnr)
