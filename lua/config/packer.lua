@@ -11,19 +11,29 @@ return require("packer").startup(function(use)
   -- treesitter plugin
   use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
 
+  use {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+    }
+  }
+
   -- undo history
   use { "mbbill/undotree" }
-
-  -- for comments
-  use { "numToStr/Comment.nvim" }
 
   -- autodetect tabstop and shiftwidth
   use { "tpope/vim-sleuth" }
 
   -- *line plugins
-  use { "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" }
+  use { "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" }
   use { "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons", opt = true } }
   use { "lukas-reineke/indent-blankline.nvim" }
+
+  -- command line
+  use { "VonHeikemen/fine-cmdline.nvim", requires = { "MunifTanjim/nui.nvim" } }
 
   -- git
   use { "lewis6991/gitsigns.nvim" }
